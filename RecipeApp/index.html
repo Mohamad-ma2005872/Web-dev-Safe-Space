@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="displayRecipes()">
+    <header class="banner">
+        <h1 class="title">Recipe Management App</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#" onclick="loadPage('edit_page.html','add')">Add Recipe</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content" class="main-content" >
+        <!--For a new page replace the whole thing inside the -->
+        <div class="recipes" id="recipes">
+            <!-- Load the recipes here you need to remove the sample card below -->
+            <!-- <div class="recipe-card">
+                <img src="https://www.themealdb.com/images/media/meals/wyrqqq1468233628.jpg" class="card-img" />
+                <div class="description">
+                    <h1>REMOVE ME I AM EXAMPLE</h1>
+                    <hr>
+                    <h2>REMOVE ME INSTRUCTION</h2>
+                    <p class="instructions">REMOVE ME INSTRUCTION
+                    </p>
+                </div>
+                <div class="action-btns">
+                    <button class="btn-update"> <i class="fa fa-pencil">Update</i></button>
+                    <button class="btn-delete"> <i class="fa fa-trash"> Delete </i></button>
+                </div>
+            </div>-->
+        </div> 
+    </main>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
+
