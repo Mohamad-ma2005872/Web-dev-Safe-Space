@@ -73,7 +73,7 @@ async function updateRecipe(recipeId) {
   const index = recipes.findIndex((recipe) => +recipe.id === recipeId);
   let recipe = recipes[index];
   // Load data into form
-  const form = objectToForm(recipe);
+  objectToForm(recipe);
 }
 
 function saveUpdate(e) {
@@ -103,7 +103,6 @@ function objectToForm(object) {
     else if (key === "instructions")
       document.querySelector("#instructions").value = value;
   }
-  return form;
 }
 
 // Delete recpies =====================================================================
